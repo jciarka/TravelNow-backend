@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3911C3D7-3850-907D-A42E-D220230C4D13" name="addresses">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>AE16C423-BC82-C714-1A94-93A55E69FC83</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="146FE9D5-62A9-0760-35E7-B159A238624D">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>467B7144-E6E7-6491-D613-5A2CE44D7016</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street" id="994B902E-4F0C-5F89-80A5-13B4FE8084DB">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>3877E4B4-396F-315D-B6C0-63FEC433AE61</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="number" id="DD654209-5D98-DBB6-C33E-DE1069186D51">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>97B97D54-AD74-6205-06D1-1E8EAC4234C3</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city" id="D9775961-2E08-D90F-7CD0-F3BDF6FB9D0C">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>194862D3-107E-E5B9-889D-68D79B454671</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="postalcode" id="15FE2E1C-B378-F8DC-F1DB-D312753133ED">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>953C143E-A92B-6BEC-1293-2F174EF4E987</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="regions_id" id="EE3D9FC8-A507-8B9F-AE4E-765EA4BDF2FD">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>9AAFAB07-F418-876F-94C8-197F1191E14A</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2ABB4B79-08B6-988D-A364-C443C309436F" referredColumn="09A93BD5-DFDB-B859-59FC-F1007B23F99B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0D4F5616-62F4-6C85-4911-0A97189239DB" name="addresses_PK">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>C8016851-4A35-FFB0-D2DC-4ED162B79888</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="146FE9D5-62A9-0760-35E7-B159A238624D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2E0B973-3A70-DD68-BBBE-559BB6AA0346" name="addresses_regions_FK">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>87625F25-399B-BE00-AB1F-662A879BB7EA</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE3D9FC8-A507-8B9F-AE4E-765EA4BDF2FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

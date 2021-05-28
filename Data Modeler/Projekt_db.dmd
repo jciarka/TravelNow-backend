@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Projekt_db" id="F4BEA09A-790F-07F0-3D16-0E9926A530C1" version="3.5">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 18:42:33 UTC</createdTime>
+<ownerDesignName>TravelNow_DB</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>F4BEA09A-790F-07F0-3D16-0E9926A530C1</designId>
+</OSDM_Design>

@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C77D7194-7A86-0D84-F3D4-4B3EE1685918" name="countries">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>DD086D1E-5C62-E337-C89F-627A0FDCDC94</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="5A396D0F-A30E-8E9F-D70D-040AB057BE1A">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>8D542D2F-9D75-9BFF-D6FB-C7954A782FBB</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="3FE8CA0A-3206-7AAA-F679-1B44D3E33BD6">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>1F6286A9-FDA7-6322-0328-D6B37660988D</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dialingcode" id="ACBC50C3-26B3-2559-B418-BD9EBA337786">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>9F6D9A8B-F663-CD90-E85B-B9F41A6F1EA2</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="abbreviation" id="36180B7A-D4ED-68F8-6D63-686BCB0926F1">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>33AD81C6-2531-2143-6A76-1278F512C7E7</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC58266A-367D-DDC6-612C-E1D45D12770E" name="country_PK">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>530FD938-AB1E-328F-96F4-15E967D8883F</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A396D0F-A30E-8E9F-D70D-040AB057BE1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

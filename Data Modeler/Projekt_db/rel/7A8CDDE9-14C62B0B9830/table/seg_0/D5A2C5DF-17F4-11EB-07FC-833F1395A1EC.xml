@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5A2C5DF-17F4-11EB-07FC-833F1395A1EC" name="comments">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>24663599-B8DA-3DA4-1699-D322131C9CB9</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<abbreviation>comments</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="FE145BA3-3C82-E278-10B5-BFB10AAE8034">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>0A07FAD6-AD45-3C0A-FC18-2EE08AD81848</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="text" id="8DC6B112-6E00-D0BA-FE64-2F9C02A7C2A4">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>7FBF5AAB-50DD-6754-8265-C90F70198839</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rating" id="048A1387-0D75-0A6B-48CF-A8E627AF44F5">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>2355A1CA-3487-5F89-DEB3-23FEC71725A3</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>5</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="users_id" id="D2B353B9-ECEE-9C78-8E62-8A9942439BF3">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>D308FD63-F1E6-32ED-99AE-BA8B21F72401</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A83E323D-CB1B-F158-1F44-C5451A577C29" referredColumn="AE375F36-74AF-4A14-00C9-47F309A65D06"/>
+</associations>
+</Column>
+<Column name="hotels_id" id="1AC30438-A264-9251-E845-3410A048E89F">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>86821F9A-B6C1-3CED-CD9D-10E263D2F332</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="84916C33-7642-64FE-A535-878D68EB8492" referredColumn="A3F870DC-4E39-8094-5DD6-6DE51014A7DA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9AB97EEC-186F-B59D-98C3-5250C6338465" name="comments_PK">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>74D178A0-1728-A209-11E6-FAAC49EA903E</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE145BA3-3C82-E278-10B5-BFB10AAE8034"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCCEAAF9-E897-106E-F538-F12109626DD3" name="comments_hotels_FK">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>126528B8-5636-C484-E0C0-F42CA6317445</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AC30438-A264-9251-E845-3410A048E89F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98A5784B-4271-79D0-615F-A12A97F1F6E7" name="comments_users_FK">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>031BB966-B963-F5DA-A450-44E7867EF172</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2B353B9-ECEE-9C78-8E62-8A9942439BF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

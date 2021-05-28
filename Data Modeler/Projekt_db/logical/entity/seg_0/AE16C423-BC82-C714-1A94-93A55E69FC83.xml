@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AE16C423-BC82-C714-1A94-93A55E69FC83" name="addresses">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 21:40:29 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="467B7144-E6E7-6491-D613-5A2CE44D7016">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 21:40:56 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street" id="3877E4B4-396F-315D-B6C0-63FEC433AE61">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 21:41:34 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="number" id="97B97D54-AD74-6205-06D1-1E8EAC4234C3">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 21:42:00 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="city" id="194862D3-107E-E5B9-889D-68D79B454671">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 21:42:53 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postalcode" id="953C143E-A92B-6BEC-1293-2F174EF4E987">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 21:43:18 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="9AAFAB07-F418-876F-94C8-197F1191E14A">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:01:44 UTC</createdTime>
+<generatorID>87625F25-399B-BE00-AB1F-662A879BB7EA</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<referedAttribute>101B4D91-B398-78B8-4257-573D083D9CB6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C8016851-4A35-FFB0-D2DC-4ED162B79888" name="Addresses PK">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 21:41:52 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>467B7144-E6E7-6491-D613-5A2CE44D7016</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

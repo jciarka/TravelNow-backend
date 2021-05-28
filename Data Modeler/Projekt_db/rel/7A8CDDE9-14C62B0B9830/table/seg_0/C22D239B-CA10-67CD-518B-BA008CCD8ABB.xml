@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C22D239B-CA10-67CD-518B-BA008CCD8ABB" name="hotels">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 20:16:34 UTC</createdTime>
+<generatorID>25757B18-2E9C-E0D7-10C1-43217C922D66</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="A3F870DC-4E39-8094-5DD6-6DE51014A7DA">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 20:16:34 UTC</createdTime>
+<generatorID>11860F55-8AF8-5429-9FAD-0D69FBD7E8D6</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="A3341623-7D31-DBBE-CACB-9C1F131E87E6">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 20:16:34 UTC</createdTime>
+<generatorID>73623CCC-991D-0F53-C1A0-2EDE49D21313</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tel" id="FD2AFB0F-BC54-2782-C13E-A61AD67FB444">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>9F990612-4BB8-A82A-D471-DACD29D78FDD</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<constraintName>tel</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="C7E07371-CFF3-4BE5-0C6D-55157CD54AAE">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:12:03 UTC</createdTime>
+<generatorID>453B0CEB-CB87-EA65-4604-27432E10393B</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="addresses_id" id="1198BFCF-FC50-7E85-FBDF-CB4EC637CCC0">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-21 18:58:39 UTC</createdTime>
+<generatorID>8A76E035-B2C8-74DA-E99C-F44258744D28</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F10A5E03-A678-3E4E-BD25-B0B197DE613D" referredColumn="146FE9D5-62A9-0760-35E7-B159A238624D"/>
+</associations>
+</Column>
+<Column name="users_id" id="137740AB-475C-A534-D71D-7B7FB4323749">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-21 18:58:39 UTC</createdTime>
+<generatorID>F852EDE8-CE66-8ADA-6E35-CC0CCA6501E3</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="42C25DBF-7413-1117-1E8F-90844BEE8489" referredColumn="AE375F36-74AF-4A14-00C9-47F309A65D06"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6A306E9F-A574-E2B5-5173-27C9637FF413" name="Hotels_PK">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 20:16:34 UTC</createdTime>
+<generatorID>1457970D-F41A-1A3A-201D-8B04FBC5B99E</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3F870DC-4E39-8094-5DD6-6DE51014A7DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3EF8CA7A-3D83-2FAF-FC64-41FBD78852F2" name="hotels__IDX">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-21 18:58:39 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>9D0154B3-39AE-6672-AC7B-841FEB08EBFF</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="1198BFCF-FC50-7E85-FBDF-CB4EC637CCC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43C6CEB5-B3F4-EB73-7017-575993B92BE2" name="hotels_addresses_FK">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-21 18:58:39 UTC</createdTime>
+<generatorID>9D0154B3-39AE-6672-AC7B-841FEB08EBFF</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1198BFCF-FC50-7E85-FBDF-CB4EC637CCC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="850F8D80-28FF-37BE-DB8E-0EBE73CD602F" name="hotels_users_FK">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-21 18:58:39 UTC</createdTime>
+<generatorID>22D5A2D4-B418-828C-9BE4-DA98A32805D4</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="137740AB-475C-A534-D71D-7B7FB4323749"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

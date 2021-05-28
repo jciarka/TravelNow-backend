@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="33C9BD81-41A8-B267-A083-6B72E45B7C59" name="users">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 19:47:05 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>users</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="694BF7B3-3852-8678-1205-0AA67A858794">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 19:47:17 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="username" id="69CA1575-744E-09C7-90F2-A0688852EC59">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 19:48:22 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="password" id="26CB7B9B-5E37-B888-2544-40B63D26125F">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 19:51:02 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="active" id="FB6676F0-0DAC-3D44-A5A6-D6D531290DA2">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 19:51:51 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<constraintName>value_YN</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="active in ( &apos;Y&apos;, &apos;N&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="roles" id="0339B98C-236D-D45C-40FD-ADF854D021EA">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 19:56:12 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="23E4C31A-42F6-B20F-1306-8F762B88512B">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 20:11:50 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<constraintName>email_const</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE (EMAIL,&apos;^[A-Za-z]+[A-Za-z0-9.]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$&apos;) "/>
+</checkConstraint>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="78F8F967-A7B0-3801-B17F-C6F6C022782F" name="users PK">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 19:48:08 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>694BF7B3-3852-8678-1205-0AA67A858794</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

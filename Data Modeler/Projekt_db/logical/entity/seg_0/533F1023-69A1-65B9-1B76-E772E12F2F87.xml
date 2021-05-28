@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="533F1023-69A1-65B9-1B76-E772E12F2F87" name="reservations">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 21:55:55 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="B17F9435-2FEB-8360-C957-044BC2E1BF05">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 21:56:00 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="startdate" id="E7342034-BA67-B688-1FFE-4333B994CF51">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 21:56:13 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="finishdate" id="D5AEBAA3-695E-46C2-05F9-7001E502D2A5">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 21:56:39 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="97FF5150-4A07-9C45-8C86-875352E1A33C">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:03:57 UTC</createdTime>
+<generatorID>EFA2F6A2-685C-FA44-9B5A-0D80A5640B53</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<referedAttribute>694BF7B3-3852-8678-1205-0AA67A858794</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="2195202D-B4C0-C581-1E7F-3AABAE376277">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:04:44 UTC</createdTime>
+<generatorID>B736AC93-7D44-FCEF-A3F2-2989E22C0CC7</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<referedAttribute>93139FC5-0FBB-20EA-7ED6-665E939A772C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B3C824E2-BE3A-F19B-721B-1B8BF550F429" name="reservations PK">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 21:56:12 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B17F9435-2FEB-8360-C957-044BC2E1BF05</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

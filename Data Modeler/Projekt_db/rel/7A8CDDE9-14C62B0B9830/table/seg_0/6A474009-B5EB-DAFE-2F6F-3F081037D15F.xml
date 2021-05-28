@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6A474009-B5EB-DAFE-2F6F-3F081037D15F" name="users">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 19:57:31 UTC</createdTime>
+<generatorID>33C9BD81-41A8-B267-A083-6B72E45B7C59</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<abbreviation>users</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="AE375F36-74AF-4A14-00C9-47F309A65D06">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 19:57:31 UTC</createdTime>
+<generatorID>694BF7B3-3852-8678-1205-0AA67A858794</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="username" id="3837785A-FCB2-54FA-9B5D-5BB96AF3BFF9">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 19:57:31 UTC</createdTime>
+<generatorID>69CA1575-744E-09C7-90F2-A0688852EC59</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="5C8118AE-C297-4A79-442A-C9184D392A34">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 19:57:31 UTC</createdTime>
+<generatorID>26CB7B9B-5E37-B888-2544-40B63D26125F</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="active" id="1FD8A9F5-60D0-6636-AA95-F168EB2516B2">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 19:57:31 UTC</createdTime>
+<generatorID>FB6676F0-0DAC-3D44-A5A6-D6D531290DA2</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<constraintName>value_YN</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="active in ( &apos;Y&apos;, &apos;N&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="roles" id="4B86BFC6-D70A-0D10-F9EA-202779ED58FA">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 19:57:31 UTC</createdTime>
+<generatorID>0339B98C-236D-D45C-40FD-ADF854D021EA</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="7CF5C391-B204-4993-84CD-03637326E9CD">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 20:16:34 UTC</createdTime>
+<generatorID>23E4C31A-42F6-B20F-1306-8F762B88512B</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<constraintName>email_const</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE (EMAIL,&apos;^[A-Za-z]+[A-Za-z0-9.]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$&apos;) "/>
+</checkConstraint>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="93AB5D84-F280-45E3-FC5C-984ADB74DE16" name="users_PK">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 19:57:31 UTC</createdTime>
+<generatorID>78F8F967-A7B0-3801-B17F-C6F6C022782F</generatorID>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE375F36-74AF-4A14-00C9-47F309A65D06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

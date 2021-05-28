@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="hotel_administrator" directorySegmentName="seg_0" id="22D5A2D4-B418-828C-9BE4-DA98A32805D4">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-21 18:57:20 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<sourcePk>1457970D-F41A-1A3A-201D-8B04FBC5B99E</sourcePk>
+<targetPk>78F8F967-A7B0-3801-B17F-C6F6C022782F</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>25757B18-2E9C-E0D7-10C1-43217C922D66</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>33C9BD81-41A8-B267-A083-6B72E45B7C59</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

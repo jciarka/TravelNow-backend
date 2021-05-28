@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="room_reservation" directorySegmentName="seg_0" id="B736AC93-7D44-FCEF-A3F2-2989E22C0CC7">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:04:10 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<sourcePk>B3C824E2-BE3A-F19B-721B-1B8BF550F429</sourcePk>
+<targetPk>18E23338-1F20-4A75-7058-03538BA54DAF</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>533F1023-69A1-65B9-1B76-E772E12F2F87</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>F8135990-FFFF-6BF9-6F23-5F8DF8604924</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

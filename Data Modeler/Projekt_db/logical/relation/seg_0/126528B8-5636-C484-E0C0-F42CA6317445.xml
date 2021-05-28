@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="comment_hotel" directorySegmentName="seg_0" id="126528B8-5636-C484-E0C0-F42CA6317445">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 22:11:27 UTC</createdTime>
+<ownerDesignName>Projekt_db</ownerDesignName>
+<engineerTo>
+<item key="7A8CDDE9-50C4-E347-B77D-14C62B0B9830" value="true"/>
+</engineerTo>
+<sourcePk>74D178A0-1728-A209-11E6-FAAC49EA903E</sourcePk>
+<targetPk>1457970D-F41A-1A3A-201D-8B04FBC5B99E</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>24663599-B8DA-3DA4-1699-D322131C9CB9</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>25757B18-2E9C-E0D7-10C1-43217C922D66</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

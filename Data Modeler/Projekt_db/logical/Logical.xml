@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="BF16A1AD-DE32-AD5A-B16E-DA48E99E4925" mainViewID="6FF00BE0-121F-985D-7BF9-A6022715DEDB">
+<createdBy>jakub</createdBy>
+<createdTime>2021-03-20 18:42:33 UTC</createdTime>
+<ownerDesignName>TravelNow_DB</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
